@@ -208,6 +208,7 @@ label {
 
     .box-login {
         height: 50%;
+        align-self: center;
     }
 }
 
