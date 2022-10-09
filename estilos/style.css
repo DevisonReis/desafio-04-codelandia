@@ -205,6 +205,10 @@ label {
         justify-content: center;
         align-items: center;
     }
+
+    .box-login {
+        height: 50%;
+    }
 }
 
 @media (max-width: 375px) {
