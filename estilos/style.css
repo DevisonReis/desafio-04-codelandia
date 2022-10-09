@@ -1,0 +1,222 @@
+:root {
+    --green: #04c35c;
+    --blue: #2b6cb0;
+
+    --white: #ffffff;
+    --white300: #f7fafc;
+
+    --dark: #1a202c;
+    --input: #e8e8e8;
+}
+
+/* Fontes do projeto */
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(/fontes/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(/fontes/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Merriweather-Regular;
+    src: url(/fontes/Merriweather-Regular.ttf);
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100vh;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: Lato-Bold;
+    width: 18rem;
+    margin-bottom: 25px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background-color: var(--white300);
+    min-width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.left > img {
+    max-width: 400px;
+}
+
+.login {
+    min-width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    min-width: 40%;
+}
+
+.welcome {
+    font-family: Merriweather-Regular;
+    width: 18rem;
+    margin-bottom: 5px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-width: 100%;
+}
+
+.forgot-password {
+    font-family: Merriweather-Regular;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    width: 18rem;
+    font-size: 9pt;
+}
+
+.forgot-password:hover > a {
+    text-decoration: underline;
+}
+
+label {
+    font-family: Merriweather-Regular;
+    font-size: 10pt;
+    display: flex;
+    align-self: baseline;
+}
+
+#input-email, #input-password {
+    height: 2.3rem;
+    width: 18rem;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+.btn-login {
+    font-family: Merriweather-Regular;
+    font-weight: bolder;
+    width: 18rem;
+    height: 2.5rem;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #04c35de7;
+}
+
+.btn-google {
+    font-family: Merriweather-Regular;
+    width: 18rem;
+    height: 2.5rem;
+    margin-bottom: 80px;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.logo-google {
+    position: relative;
+    top: 33px;
+    right: 110px;
+    cursor: pointer;
+}
+
+/* Configurações de Media Query */
+
+@media (max-width: 800px) {
+    .left {
+        min-width: 50%;
+    }
+
+    .login {
+        min-width: 50%;
+    }
+
+    img {
+        min-width: 300px;
+    }
+
+    .logo-google {
+        position: relative;
+        top: 33px;
+        right: 110px;
+        min-width: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .login {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .signup {
+        margin-top: 3rem;
+    }
+}
