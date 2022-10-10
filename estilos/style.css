@@ -36,7 +36,7 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
 }
 
 a {
@@ -55,8 +55,6 @@ h2 {
 
 .main-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .left {
@@ -68,6 +66,7 @@ h2 {
 }
 
 .left > img {
+    height: 100%;
     max-width: 400px;
 }
 
@@ -83,10 +82,11 @@ h2 {
 .box-login {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 4rem;
     height: 60%;
-    min-width: 40%;
+    min-width: 15rem;
 }
 
 .box-login p, a {
@@ -185,7 +185,8 @@ label {
         min-width: 50%;
     }
 
-    img {
+    .left > img {
+        height: 100%;
         width: 300px;
     }
 
